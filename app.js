@@ -14,3 +14,10 @@ app.get("/users", async (req, res) => {
   }
 });
 
+
+
+// Get a single user
+app.get("/users/:id", getUser, (req, res) => {
+    res.json(res.user);
+  });
+  
